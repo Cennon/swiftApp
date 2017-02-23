@@ -11,17 +11,15 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet var theLabel: UILabel!
+    @IBOutlet var textOne: UITextField!
     
-    var tapCount = 0
+    @IBOutlet var textTwo: UITextField!
     
     @IBAction func buttonTapped(_ sender: Any) {
-        tapCount = tapCount + 1
-        print(tapCount)
-        
-        if tapCount >= 20 {
-            theLabel.text = "BUTTONPUSHER"
-        }
-        
+
+        print(textOne)
+        print(textOne.text!)
+        print(textTwo.text!)
     }
     
     @IBAction func button2Tapped(_ sender: Any) {
